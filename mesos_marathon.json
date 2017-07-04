@@ -1,0 +1,23 @@
+{
+  "id": "/mining/cpuminer-opt",
+  "cmd": "/root/start.sh --no-color -a yescrypt -o stratum+tcp://stratum.eu.miners-pool.eu:8428 -u <your_myriadcoin_address>",
+  "cpus": 8,
+  "gpus": 0,
+  "mem": 512,
+  "disk": 1000,
+  "instances": 5,
+  "container": {
+    "type": "MESOS",
+    "docker": {
+      "image": "docker.domain.com/mining/cpuminer-opt:latest",
+      "forcePullImage": true
+    }
+  },
+  "constraints": [
+    [
+      "hostname",
+      "MAX_PER",
+      "3"
+    ]
+  ]
+}
