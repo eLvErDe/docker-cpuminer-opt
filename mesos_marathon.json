@@ -1,6 +1,6 @@
 {
   "id": "/mining/cpuminer-opt",
-  "cmd": "/root/start.sh --no-color -a yescrypt -o stratum+tcp://stratum.eu.miners-pool.eu:8428 -u <your_myriadcoin_address> -t 4 --api-bind 0.0.0.0:$PORT0",
+  "cmd": "/root/start.sh --no-color -a yescrypt -o stratum+tcp://stratum.eu.miners-pool.eu:8428 -u <your_myriadcoin_address> -p 4 -t 4 --api-bind 0.0.0.0:$PORT0",
   "cpus": 4,
   "gpus": 0,
   "mem": 512,
