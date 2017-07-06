@@ -41,3 +41,20 @@ curl -X PUT -u marathon\_username:marathon\_password --header 'Content-Type: app
 
 [cpuminer-opt]: https://github.com/JayDDee/cpuminer-opt
 [Mesos]: http://mesos.apache.org/documentation/latest/gpu-support/
+
+## Example command lines
+
+Myriadcoin (XMY) on miners-pool.eu (4 cores) (keep -p close to actual number of threads):
+```
+/root/start.sh --no-color -a yescrypt -o stratum+tcp://stratum.eu.miners-pool.eu:8428 -u <your_myriadcoin_address> -p 4 -t 4
+```
+
+Myriadcoin (XMY) on miningpoolhub.com
+```
+/root/start.sh --no-color -a yescrypt -o stratum+tcp://hub.miningpoolhub.com:20577 -u <login>.<worker_name> -t 4
+```
+
+Monero (XMR) on supportxmr.com (4 cores) with automatic payment to an exchange
+```
+/root/start.sh --no-color -a cryptonight -o stratum+tcp://pool.supportxmr.com:5555 -t 4 --api-bind 0.0.0.0:$PORT0 -u <address>.<payement_id> -p rig0:email@domain.com
+```
