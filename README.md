@@ -9,7 +9,7 @@ then passing all arguments to the cpuminer binary.
 ## Build images
 
 ```
-git clone https://github.com/EarthLab-Luxembourg/docker-cpuminer-opt
+git clone https://github.com/eLvErDe/docker-cpuminer-opt
 cd docker-cpuminer-opt
 docker build -t cpuminer-opt .
 ```
