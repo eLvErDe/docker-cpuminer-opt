@@ -9,7 +9,7 @@
   "container": {
     "type": "MESOS",
     "docker": {
-      "image": "earthlablux/cpuminer-opt:latest",
+      "image": "acecile/cpuminer-opt:latest",
       "forcePullImage": true
     }
   },
